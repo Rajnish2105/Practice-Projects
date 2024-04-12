@@ -33,6 +33,7 @@ body {
     width: 100px;
     background-color: black;
     border-radius: 50%;
+    margin-bottom: 15px;
 }
 
 .mouth{
@@ -61,8 +62,4 @@ body {
 .face:hover {
     transform: translateY(-10px);
     box-shadow: 0 0.1rem 1em 0.5em rgb(21, 213, 14);
-}
-
-.leye:hover, .reye:hover {
-    background-color: red;
 }
