@@ -1,0 +1,142 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #7b9391;
+}
+
+h1 {
+    font-size: 6em;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+nav {
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+ul,
+li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: red;
+}
+
+@media (min-width: 500px) {
+    h1 {
+        color: orange;
+    }
+}
+
+@media (min-width: 1000px) {
+    h1 {
+        color: yellow;
+    }
+}
+
+@media (min-width: 1500px) {
+    h1 {
+        color: green;
+    }
+}
+
+/* 
+@media (orientation: landscape) {
+    body {
+        background-color: magenta;
+    }
+} */
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 4em;
+    }
+
+    nav,
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 3em;
+    }
+}
+
+
+
+
+/*my futile turn*/
+/* 
+nav {
+    background-color: aqua;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+nav a[href="#home"] {
+    align-self: flex-start;
+}
+
+nav a[href="#signup"] {
+    align-self: flex-end;
+}
+
+nav a[href="#Home"] {
+    align-self: center;
+} */
+
+/* 
+#button {
+    margin: auto 10px;
+    border-radius: 0.5em;
+    background: none;
+    color: #ffa260;
+    /*no need to set border color specificly*/
+/* border: 3px solid;
+    padding: 0.5em 1em;
+    i used px instead of em's used margin auto to set things instead of flex box */
+/* font-size: 1em; */
+/*i didn't just font-size*/
+/* 
+}
+
+#button:hover {
+    border-color: #f1ff5c;
+    color: #f1ff5c;
+    /*how to make a shadow
+    box-shadow: Xoffset Yoffset blur radius spread radius color*/
+
+/* box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+    /*i used px in translate */
+/* transform: translateY(-0.25em);
+    transition: all 0.2s;
+    cursor: pointer;
+} */

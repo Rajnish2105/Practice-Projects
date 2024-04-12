@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first Form</title>
+</head>
+
+<body>
+    <h1 align="center"> Forms Demo</h1>
+
+    <form action="" align="center">
+
+        <p>
+            <label for="Username">Username: </label>
+            <input type="text" id="Username" placeholder="Username" name="Username">
+        </p>
+
+        <p>
+            <label for="Password">Password: </label>
+            <input type="password" id="Password" placeholder="Password" name="Password">
+        </p>
+
+        <p>
+            <label for="Color">Choose what color you like: </label>
+            <input type="color" id="Color" name="Color">
+        </p>
+
+        <p>
+            <label for="Age">Age: </label>
+            <input type="number" placeholder="Age" name="Age">
+        </p>
+
+        <button>Submit</button>
+
+    </form>
+
+    <h2 align="center">Typical serches</h2>
+
+    <h3 align="center">Search Google</h3>
+    <form action="https://www.google.com/search">
+        <p align="center">
+            <label for="searchbar"></label>
+            <input type="text" id="seachbar" placeholder="What's on you mind" name="q">
+            <button>Seach</button>
+        </p>
+    </form>
+
+    <h3 align="center">Search youtube</h3>
+    <form action="https://www.youtube.com/results">
+        <p align="center">
+            <input type="text" name="search_query">
+            <button>Search youtube</button> <!-- It workes even if there is no button on it(just hit enter button)-->
+        </p>
+    </form>
+
+
+    <form action="/form">
+
+        <p>
+            <input type="checkbox" name="agree_T&C" id="tc">
+            <label for="tc">Agree to the trems and conditions.</label>
+        </p>
+
+        <p>
+            What is the Answer of this question?<br>
+            <input type="radio" id="O1" name="Q1" value="Option 1">
+            <label for="O1">Option 1<br></label>
+            <input type="radio" name="Q1" id="O2" value="Option 2">
+            <label for="O2">Option 2<br></label>
+            <input type="radio" name="Q1" id="O3" value="Option 3">
+            <label for="O3">Option 3<br></label>
+        </p>
+
+        <button>Submit form</button>
+    </form>
+</body>
+
+</html>

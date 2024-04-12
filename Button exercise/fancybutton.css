@@ -1,0 +1,50 @@
+body {
+    background-color: #151b29;
+    /*This is what i did wrong*/
+    /* text-align: center;
+    align-content: center; */
+
+    /*FlexBox*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 97vh;
+}
+
+button {
+    margin: auto 10px;
+    border-radius: 0.5em;
+    background: none;
+    color: #ffa260;
+    /*no need to set border color specificly*/
+    border: 3px solid;
+    padding: 1em 2em;
+    /*i used px instead of em's used margin auto to set things instead of flex box*/
+    font-size: 1em;
+    /*i didn't just font-size*/
+
+}
+
+button:hover {
+    border-color: #f1ff5c;
+    color: #f1ff5c;
+    /*how to make a shadow
+    box-shadow: Xoffset Yoffset blur radius spread radius color*/
+
+    box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+    /*i used px in translate */
+    transform: translateY(-0.25em);
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+/*something i am doing on my  own*/
+
+/* label {
+    display: block;
+}
+
+input {
+    display: block;
+    font-size: larger;
+} */
