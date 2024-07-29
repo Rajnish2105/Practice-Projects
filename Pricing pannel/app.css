@@ -158,7 +158,8 @@ body {
     padding: 15px 25px;
     width: 100%;
     max-width: 900px;
-    box-shadow: 1em 1em 2.2em 1em rgb(46, 43, 43);
+    box-shadow: 0 0 1em 0.3em rgba(46, 43, 43, 0.266);
+
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -210,6 +211,7 @@ body {
 }
 
 .pricing-button {
+    font-weight: 600;
     margin: 25px 0;
     padding: 15px 35px;
     color: #348efe;
@@ -222,7 +224,8 @@ body {
 
 .pricing-button:hover,
 .pricing-button:focus {
-    background-color: #e1f1ff;
+    background-color: #79c0ffd5;
+    color: white;
 }
 
 .pricing-button.is-featured {
@@ -232,11 +235,17 @@ body {
 
 .pricing-button.is-featured:hover,
 .pricing-button.is-featured:focus {
-    background-color: #269aff;
+    background-color: #ffffff;
+    color: rgb(39, 185, 243);
 }
 
+@media (:-min-width: 1200px) {
+    .panel {
+        max-width: 700px;
+    }
+}
 
-@media (min-width: 900px) {
+@media (min-width: 650px) {
     .panel {
         flex-direction: row;
         justify-content: center;

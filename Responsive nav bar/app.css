@@ -1,6 +1,8 @@
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #7b9391;
+    background-color: #dde0e0;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -10,11 +12,14 @@ h1 {
 
 a {
     text-decoration: none;
+    color: white;
+    font-size: 1.2em;
 }
 
 a:hover {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: underline;
+    color: blue;
     cursor: pointer;
     transition: 0.5s;
 }
@@ -24,6 +29,12 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    background-color: rgb(10, 2, 48);
+    padding: 15px 25px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: sticky;
 }
 
 nav ul {
@@ -63,13 +74,6 @@ h1 {
     }
 }
 
-/* 
-@media (orientation: landscape) {
-    body {
-        background-color: magenta;
-    }
-} */
-
 @media (max-width: 768px) {
     h1 {
         font-size: 4em;
@@ -87,56 +91,3 @@ h1 {
         font-size: 3em;
     }
 }
-
-
-
-
-/*my futile turn*/
-/* 
-nav {
-    background-color: aqua;
-
-    flex-direction: row;
-    flex-wrap: wrap;
-
-}
-
-nav a[href="#home"] {
-    align-self: flex-start;
-}
-
-nav a[href="#signup"] {
-    align-self: flex-end;
-}
-
-nav a[href="#Home"] {
-    align-self: center;
-} */
-
-/* 
-#button {
-    margin: auto 10px;
-    border-radius: 0.5em;
-    background: none;
-    color: #ffa260;
-    /*no need to set border color specificly*/
-/* border: 3px solid;
-    padding: 0.5em 1em;
-    i used px instead of em's used margin auto to set things instead of flex box */
-/* font-size: 1em; */
-/*i didn't just font-size*/
-/* 
-}
-
-#button:hover {
-    border-color: #f1ff5c;
-    color: #f1ff5c;
-    /*how to make a shadow
-    box-shadow: Xoffset Yoffset blur radius spread radius color*/
-
-/* box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
-    /*i used px in translate */
-/* transform: translateY(-0.25em);
-    transition: all 0.2s;
-    cursor: pointer;
-} */

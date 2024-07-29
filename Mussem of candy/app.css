@@ -20,8 +20,8 @@ body {
 }
 
 .img-fluid {
-    border-radius: 25px;
-    box-shadow: 1em 1em 1em 0.2em rgb(45, 41, 41);
+    border-radius: 10px;
+    box-shadow: 0 0 1em 0.2em rgba(62, 62, 62, 0.586);
 }
 
 #mainNavbar {
